@@ -1,10 +1,24 @@
 h1 {
     text-align: center;
-    color: white;
+    color: black;
+    font-family: "Monaco", monospace;
 }
 
-body {
+.bingo-title {
+    height: 100px;
+}
+
+.bingo-space {
+    width: 500px;
+    height: 100px
+}
+
+html, body {
     background: #fdd5df;
+    overflow-x: hidden;
+}
+
+body:hover {
 }
 
 table {
@@ -14,8 +28,68 @@ table {
     align-items: center;
 }
 .space {
+    font-family: "Monaco", monospace;
+    border-radius: 5px;
     background-color: #f09090;
     width: 100px;
     max-width: 100px;
     height: 50px;
+}
+
+.space:hover {
+    background-color: #a94d64;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* setup (optional) */
+*::selection {
+    color: purple;
+    background: pink;
+    -webkit-text-fill-color: purple;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+small {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+/* text-gradient */
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    background: #e96443; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+            to right,
+            #904e95,
+            #e96443
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+            to right,
+            #904e95,
+            #e96443
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* animated-icon setup - you can replace the svg with another tag and create your own element + animation if desired */
+#animated-icon {
+    position: absolute;
+    pointer-events: none; /* allow the cursor to pass through the icon */
 }
